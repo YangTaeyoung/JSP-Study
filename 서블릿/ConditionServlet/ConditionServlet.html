@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="EUC-KR">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 서블릿 조건별 출력 </title>
+        <style>
+        *{
+        	margin: 0;
+        	padding: 0;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <form action="/Chap04/ConditionServlet" method = "post">
+        <h2>아래의 항목 중 하나를 선택하시오</h2><br/>
+        <input type = "radio" name = "method" value = "get"> Get 방식이란<br/>
+        <input type = "radio" name = "method" value = "post"> Post 방식이란<br/>
+        <input type = "submit" value = "전송">
+        </form>
+    </body>
+</html>
