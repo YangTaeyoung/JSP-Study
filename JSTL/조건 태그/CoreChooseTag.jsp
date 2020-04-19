@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<% request.setCharacterEncoding("UTF-8"); %>
+<c:set var="score" value="93"/>
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<c:choose>
+			<c:when test="${score >= 90}">
+				<h3>A학점 입니다.</h3>
+			</c:when>
+			<c:when test="${score >= 80}">
+				<h3>B학점 입니다.</h3>
+			</c:when>
+			<c:when test="${score >= 70}">
+				<h3>C학점 입니다.</h3>
+			</c:when>
+			<c:when test="${score >= 60}">
+				<h3>D학점 입니다.</h3>
+			</c:when>
+			<c:otherwise>
+				<h3>F학점 입니다.</h3>
+			</c:otherwise>
+		</c:choose>
+	</body>
+</html>
