@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title></title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+		<form action="ELRequestParam.jsp" method="post">
+	    	이름<input type="text" name="name"><hr/>
+	    	사용언어
+	    	<table>
+	    		<tr>
+	    			<td><input type="checkbox" name="language" value="java"></td>
+	    			<td>Java</td>
+	    		</tr>
+	    		<tr>
+	    			<td><input type="checkbox" name="language" value="C#"></td>
+	    			<td>C#</td>
+	    		</tr>
+	    		<tr>
+	    			<td><input type="checkbox" name="language" value="python"></td>
+	    			<td>Python</td>
+	    		</tr>
+	    		<tr>
+	    			<td><input type="checkbox" name="language" value="Ruby"></td>
+	    			<td>Ruby</td>
+	    		</tr>
+	    	</table><hr/>
+	    	<input type="submit" value="전송"> 	
+		</form>
+    </body>
+</html>
